@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<style>
+    .bg-info.text-white a {
+        color: white;
+        text-decoration: underline
+    }
+
+    .container-fluid {
+        margin-top: 20px
+    }
+
+    .ui-column-one.region .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+    }
+
+</style>
+<body
+        style="position: relative; "
+        data-spy="scroll"
+        data-target="#navbar-example"
+        class=""
+>
+
+
+<!-- Normally in Bootstrap, a CONTAINER would go here, but the frame provides one -->
+<div class="container-fluid"
+     id="home">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light mb-4 navbar-expand-xl border rounded">
+        <a class="navbar-brand" href="#">
+            <img src="https://872softwaredevelopment.github.io/images/community.png"
+                 width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Racial Equity Office
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Seven Pillars Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#academic-equity">Academic</a></li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#instructional-equity">Instruction
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Programs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#advanced">Pre-AP or AP Core</a>
+                        <a class="dropdown-item" href="#magnet">Magnet Schools</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#suspensions">Suspensions</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programmatic-equity">Community
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Workplace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Leaders</a>
+                </li>
+            </ul>
+            <!--
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
+        </div>
+    </nav>
+
+    <div class="card-columns mb-4"><h3>Seven Pillars & Priorities</h3>
+        <p>There are seven specific strategic outcomes that shall be the guiding operation and work of the Racial Equity
+            Office.</p>
+
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/academic.png" class="" width=24 />-->
+                Academic Equity & Cultural Competence</h5>
+            <div class="card-body">
+                <div id="chart_div_sm"></div>
+                <p class="card-text">Prepared and culturally competent</p>
+                <a href="#academic-equity" class="btn-sm  btn-primary">Visit Academics & Culture</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/instructional.png" class="" width=24 />-->
+                Instructional Equity</h5>
+            <div class="card-body">
+                <img class="img-fluid"
+                     src="https://staff.dallasisd.org/staffnews/wp-content/uploads/2020/02/49391087977_5326757190_o.jpg">
+                <p class="card-text">Systems that support
+                    teacher growth</p>
+                <a href="#instruction" class="btn-sm  btn-primary">Visit Instructional Equity</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/programmatic.png" class="" width=24 />-->
+                Programmatic Equity</h5>
+            <div class="card-body">
+
+                <img class="img-fluid"
+                     src="https://thehub.dallasisd.org/newsroom/wp-content/uploads/2020/03/49588790028_a6b28c9b9e_k.jpg">
+
+                <p class="card-text">Increase enrollment in rigorous, advanced coursework</p>
+                <a href="#programmatic-equity" class="btn-sm  btn-primary">Visit Programmatic Equity</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/community.png" class="" width=24 />-->
+                Internal & External Community Partnerships</h5>
+            <div class="card-body">
+
+                <img class="img-fluid"
+                     src="https://thehub.dallasisd.org/newsroom/wp-content/uploads/2020/01/DSC08025.jpg">
+
+                <p class="card-text">Racial, socio-economic, and educational equity</p>
+                <a href="#partnerships" class="btn-sm  btn-primary">Visit Community Partnerships</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/culture.png" class="" width=24 />-->
+                Workplace & Workforce Culture</h5>
+            <div class="card-body">
+
+                <img class="img-fluid"
+                     src="https://thehub.dallasisd.org/newsroom/wp-content/uploads/2020/01/DSC07414.jpg">
+
+                <p class="card-text">Developing a diverse and responsive workforce</p>
+                <a href="#partnerships" class="btn-sm  btn-primary">Visit Workplace Culture</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/impact.png" class="" width=24 />-->
+                Facility & Location Impact</h5>
+            <div class="card-body">
+                <div id="chart_feeder_pattern_sm"></div>
+                <p class="card-text">Addressing human and social needs</p>
+                <a href="#location" class="btn-sm  btn-primary">Visit Facility and Location</a>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">
+                <!--<img src="https://872softwaredevelopment.github.io/images/leadership.png" class="" width=24 />-->
+                Leadership & Operations</h5>
+            <div class="card-body">
+
+                <img class="img-fluid" src="https://thehub.dallasisd.org/newsroom/wp-content/uploads/2019/07/6.jpg">
+
+                <p class="card-text">Advance equity through accountable leadership</p>
+                <a href="#leadership" class="btn-sm  btn-primary">Visit Leadership & Operations</a>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="chartFullStackedOverall" class="mb-4"></div>
+
+    <!-- START -->
+
+
+    <!--
+        Pillar
+        Key Metric Name
+        Term Definitions
+        Other notes/next steps
+        Data Sources
+        Key Metric Drill Downs
+        Other potential data points to put on detail page
+        Academic Equity & Cultural Competence
+        % of students proficient
+        One bar each for % of African American, LEP, Districtwide students
+        Students: grades 3-12 only
+        Proficient: Meets or Masters on STAAR ELA, Math and EOC tests
+        October snapshot enrollment by school
+        PowerSchool
+        Student Demographics -->
+
+    <div class="mb-4" id="academic-equity">
+        <div class="card">
+            <h5 class="card-header"><img
+                    src="https://www.dallasisd.org/cms/lib/TX01001475/Centricity/Domain/19668/acadachievement.png"
+                    width=30
+                    class="mr-2"
+            >Academic Equity & Cultural Competence</h5>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8 mb-4">
+
+                        <p class="card-text">Enhance educational and instructional practices to prepare all
+                            students for college and career while engaging students inclusively, with culturally
+                            competent and
+                            responsive pedagogy.
+                            The practices shall include culturally relevant activities that
+                            engage all student groups and intentionally disaggregating
+                            and monitoring student achievement data for AfricanAmerican and English language
+                            learners.</p> <h5 class="card-title">Prepared and culturally competent</h5>
+                        <div class="row">
+
+
+                            <div class="col-lg-6"><p class="mb-5">
+                                <span class="display-4">12%</span></br>
+                                of African American students in grades
+                                3&ndash;12 <strong>meets/masters standards STAAR ELA, Math and EOC
+                                tests.</strong>
+                            </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="mb-5"><span class="display-4">34%</span></br>
+                                    of English Learning students in grades
+                                    3&ndash;12 <strong>meets/masters standards for STAAR ELA, Math and EOC
+                                        tests.</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="card-text small">One bar each for % of African American, LEP, Districtwide
+                            students
+
+
+                            <br/>Students: grades 3-12 only
+                            <br/>Proficient: Meets/Masters on STAAR ELA, Math and EOC tests
+                        </p>
+
+
+                        <div id="chart_div"></div>
+
+                        <p class="small">Students grades 3-12 meet or
+                            masters STAAR ELA, Math and EOC tests.</p>
+                        <a href="#home" class="btn btn-primary">Back to Top</a>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="card text-white bg-info">
+                            <div class="card-header">Priorities</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Department Partnerships
+                                </h5>
+                                <p class="card-text"><a href="https://www.dallasisd.org/counselingservices">Counseling
+                                    Services</a>
+
+
+                                </p>
+
+                                <p class="card-text"><a href="https://www.dallasisd.org/domain/148">School
+                                    Leadership</a></p>
+
+                                <h5 class="card-title">Upcoming Milestones
+
+                                </h5>
+
+
+                                <p class="card-text">Apr 2020: Recommendations from Resource Equity Working Group</p>
+                                <p class="card-text"> June 2020: Board review of year-end data
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card mb-4" id="programmatic-equity">
+        <h5 class="card-header"><img
+                src="https://872softwaredevelopment.github.io/images/programmatic.png"
+                width=30
+                class="mr-2"
+        >Programmatic Equity</h5>
+        <div class="card-body" id="advanced">
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+
+                    <h5 class="card-title">Increase enrollment in rigorous, advanced coursework</h5>
+                    <p class="card-text">Identify key indicators to remove systematic differences and
+                        Racial, SocioEconomic, and create equitable access to programs such as early childhood,
+                        special education, gifted and talented, dual language programs with English as a second
+                        language,
+                        dyslexia, advanced placement and collegiate academies, in addition to
+                        monitoring and reducing student discipline data relative to African-American students.</p>
+                    <div class="row mb-4">
+                        <div class="col-lg-4">
+                            <p class="mb-5">
+                                <span class="display-4">45%</span></br>
+                                of African American students in grades
+                                6&ndash;12 are <strong>enrolled in advanced courses.</strong></p>
+
+                            <p class="mb-5"><span class="display-4">47%</span></br>
+                                of English Language Learning students in grades
+                                6&ndash;12 are <strong>enrolled in advanced courses.</strong></p>
+
+                            <p>
+
+
+                        </div>
+                        <div class="col-lg-8">
+                            <div id="barchart_values" style="width: 100%"></div>
+                            <small>% of students enrolled in advanced courses
+
+                                One bar each for % of African American, LEP, Districtwide students
+
+
+                                Students: grades 6-12 only
+
+
+                                Advanced courses: Pre-AP or AP core courses (Math, ELA, Science, Social
+                                Studies)</small>
+                        </div>
+
+
+                    </div>
+                    <p class="card-text "><em>An average of 53% of DISD students are enrolled in AP courses.</em></p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-white bg-info">
+                        <div class="card-header">Priorities</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Department Partnerships
+                            </h5>
+                            <p class="card-text"><a href="https://www.dallasisd.org/domain/12299">Office of
+                                Transformation and Innovation</a></p>
+                            <p class="card-text"><a href="https://www.dallasisd.org/prek">Early Learning</a></p>
+
+                            <p class="card-text"><a href="https://www.dallasisd.org/domain/148">School
+                                Leadership</a></p>
+
+                            <h5 class="card-title">Upcoming Milestones
+
+                            </h5>
+
+
+                            <p class="card-text">June 2020: Board review of year-end data</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <hr/>
+
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <h6>Qualified Students Enrolled In Magnets</h6>
+                    <div id="chart_magnet"></div>
+                    <p class="card-text small" id="magnet">
+                        % of qualified students enrolled in magnets
+                        <br/>
+                        One bar each for % of African American, LEP, Districtwide students
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h6>One Event of Out-of-school Suspension or More</h6>
+                    <div id="chart_suspension"></div>
+                    <p class="card-text small" id="suspension">% of students on out-of-school suspensions
+
+                        One bar each for % of African American, LEP, Districtwide students
+
+                    </p>
+
+
+                </div>
+
+            </div>
+            <a href="#home" class="btn btn-primary my-3">Back to Top</a>
+        </div>
+
+    </div>
+</div>
+<div class="mb-4">
+
+    <div class="card">
+        <h5 class="card-header"><img src="https://872softwaredevelopment.github.io/images/community.png"
+                                     width=30
+                                     class="mr-2">
+            Internal &amp; External Community Partnerships</h5>
+        <div class="card-body">
+            <h5 class="card-title">Racial, socio-economic, and educational equity</h5>
+            <div class="row">
+                <div class="col-lg-6">
+                    <strong>Gender</strong>
+                    <br>A short story about how the % of students that are male vs female
+                    <div id="chart_gender" style=""></div>
+                </div>
+                <div class="col-lg-6">
+                    <strong>Ethnicity</strong>
+                    <br>A short story about the breakdown of % by ethnicity
+                    <br>
+                    <div id="chart_ethnicity" style=""></div>
+                </div>
+            </div>
+            <p class="card-text">Establish the racial, socio-economic, and educational equity
+                collective impact model for the purposes of fostering accountability systems and encouraging
+                civic
+                participation.
+            </p>
+            <p class="card-text small">% of Let's Talk users that report satisfaction with their service
+                <br/>
+                Satisfaction: TBD - depending on how data is collected</p>
+
+            <a href="#home" class="btn btn-primary">Back to Top</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="mb-4">
+
+
+    <div class="card">
+        <h5 class="card-header"><img
+                src="https://872softwaredevelopment.github.io/images/impact.png"
+                width=40
+                class="mr-2"
+        >Facility & Location Impact</h5>
+        <div class="card-body">
+            <h5 class="card-title">Addressing human and social needs</h5>
+            <p class="card-text">Develop facility and location impact priorities for the purposes
+                of establishing mobility solutions, understanding the quality of
+                life of students and addressing the human and social needs of
+                students.</p>
+            <div id="feeder">
+                <div class="">
+                    <strong> Feeder Pattern</strong>
+                    <br>A short story about the breakdown of % by feeder pattern
+                    <br>
+                    <div id="chart_feeder_pattern" style="width: 100%; height: 100%;"></div>
+
+                </div>
+            </div>
+            <p class="card-text small">REO to work with CRI owners to determine which metrics to display</p>
+            <a href="#home" class="btn btn-primary mr-4">Back to Top</a> <a href="#leadership"
+                                                                            class="btn btn-primary">Visit
+            Facility & Location Impact Page</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <h5 class="card-header"><img
+            src="https://872softwaredevelopment.github.io/images/community.png"
+            width=40
+            class="mr-2"
+    >Workplace & Workforce Culture</h5>
+    <div class="card-body">
+        <h5 class="card-title">Developing a diverse and responsive workforce</h5>
+        <p class="card-text">Intentionally invest in all individuals throughout the district with
+            the purpose of developing a racially diverse and culturally responsive workforce.</p>
+        <div class="row">
+            <div class="col-lg-12">
+                <strong>Subject</strong>
+                <br>A short story about the breakdown of % by subject
+                <br>
+                <div id="chart_subject" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+        <p class="card-text small">% of target population that has completed Culturally Responsive Training
+            <br/>
+            Target population: needs to be set by REO - how many staff per year are they trying to serve
+
+
+            <br/>
+            Received Culturally Responsive Training: need to work with service provider to determine how to
+            track this</p>
+        <a href="#home" class="btn btn-primary">Back to Top</a>
+    </div>
+</div>
+<div class="mb-4">
+
+    <div class="card">
+        <h5 class="card-header"><img
+                src="https://872softwaredevelopment.github.io/images/instructional.png"
+                width=40
+                class="mr-2"
+        >Instructional Equity
+        </h5>
+        <div class="card-body">
+            <h5 class="card-title">Systems that support
+                teacher growth</h5>
+            <p class="card-text">Implement training programs that build teacher effectiveness
+                and enhance cultural competency and culturally responsive
+                instructional practices relative to understanding student social
+                dynamics, various learning styles, and cultural identities. The
+                training programs shall include building systems that support
+                teacher personal growth and development opportunities focused on ensuring teacher quality
+                relative
+                to teacher education, certification, experience, and mobility.</p>
+            <div id="columnchart_material_teach"></div>
+            <p class="card-text small">% of students with Proficient I+ teacher
+
+                One bar each for % of African American, LEP, Districtwide students
+
+                <br/>
+
+                Students: all grades
+                <br/>
+                Proficient I+: any teacher that received a rating of Proficient I or higher in previous year</p>
+            <a href="#home" class="btn btn-primary">Back to Top</a>
+        </div>
+    </div>
+
+
+</div>
+<div class="card">
+    <h5 class="card-header"><img
+            src="https://872softwaredevelopment.github.io/images/leadership.png"
+            width=40
+            class="mr-2"
+    >Leadership & Operations</h5>
+    <div class="card-body">
+        <h5 class="card-title">Advance equity through accountable leadership</h5>
+        <p class="card-text">Advance racial, socio-economic, and educational equity practices and operating
+            systems through accountable leadership.</p>
+        <p class="card-text small">% of students with Proficient I+ school leader
+            <br/>
+            One bar each for % of African American, LEP, Districtwide students
+            <br/>
+
+
+            Proficient I+ School Leader: school leaders that receive a rating of Proficient I or higher in the
+            previous school year
+            <br/>
+            Data will not be ready until SY2021-22</p> <a href="#home" class="btn btn-primary">Back to Top</a>
+
+    </div>
+</div>
+
+<!--
+        Student Demographics
+        by core vs electives, by grade, by ethnicity - not by school
+
+        Programmatic Equity
+        % of students enrolled in advanced courses
+        One bar each for % of African American, LEP, Districtwide students
+
+        Students: grades 6-12 only
+        Advanced courses: Pre-AP or AP core courses (Math, ELA, Science, Social Studies)
+        October snapshot enrollment by school
+
+        PowerSchool
+        Student Demographics
+        by grade, by ethnicity, by subject, by feeder pattern
+
+        Programmatic Equity
+        % of qualified students enrolled in magnets
+        One bar each for % of African American, LEP, Districtwide students
+
+        This likely becomes a secondary data point on the drill down page
+        Qualified students database provided to Magnet and Special Programs department
+        by home feeder pattern, by stage (applicants, accepted, enrolled)
+        Potential to look at collegiate academies and PreK enrollment as well down the road: but would require different data sources
+
+        Programmatic Equity
+        % of students on out-of-school suspensions
+        One bar each for % of African American, LEP, Districtwide students
+
+        This likely becomes a secondary data point on the drill down page
+        Whatever is currently being used in dashboard
+        by level of incident (likely not including school by school looks here)
+
+        Internal & External Community Partnerships
+        % of Let's Talk users that report satisfaction with their service
+        Satisfaction: TBD - depending on how data is collected
+        Need to connect with Let's Talk owners to determine how to get a Racial Equity button
+        Let's Talk data source
+        TBD
+
+        Workplace & Workforce Culture
+        % of target population that has completed Culturally Responsive Training
+        Target population: needs to be set by REO - how many staff per year are they trying to serve
+
+        Received Culturally Responsive Training: need to work with service provider to determine how to track this
+        REO to provide data on goal # of staff per year
+        REO to determine data source for tracking who has completed trainings
+        TBD - from service provider
+
+        Facility & Location Impact
+        TBD
+        REO to work with CRI owners to determine which metrics to display
+        CRI
+
+        Leadership & Operations
+        % of students with Proficient I+ school leader
+        One bar each for % of African American, LEP, Districtwide students
+
+        Proficient I+ School Leader: school leaders that receive a rating of Proficient I or higher in the previous school year
+        Data will not be ready until SY2021-22
+        October snapshot enrollment by school
+        PEI data
+        Student demographic
+
+    -->
+
+
+<!--end container-->
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//www.gstatic.com/charts/loader.js"></script>
+
+
+<script type="text/javascript">
+
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+
+    function drawChart() {
+
+        /* ----------------------------
+        Overall Stats
+        -----------------------------*/
+        var dataFullStackedOverall = google.visualization.arrayToDataTable([
+
+            ['Population', 'African American', 'English Learners', 'Both AA & EL', 'All Other Students', {role: 'annotation'}],
+            ['DISD', 31508, 68611, 867, 52822, ''],
+
+
+        ]);
+        var optionsFullStackedOverall = {
+            isStacked: 'percent',
+            height: 100,
+            legend: {position: 'top', maxLines: 1},
+            hAxis: {
+                minValue: 0,
+                ticks: [0, .25, .50, .75, 1]
+            },
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+        };
+        var chartFullStackedOverall = new google.visualization.BarChart(document.getElementById('chartFullStackedOverall'));
+        chartFullStackedOverall.draw(dataFullStackedOverall, optionsFullStackedOverall);
+
+    }
+
+    </script>
+<script>
+
+    google.charts.load("current", {packages: ["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+
+    function drawChart() {
+
+        /* -----------------------------
+        Pillar 1 (Summary)
+        ----------------------------*/
+ /*       var data_summary = google.visualization.arrayToDataTable([
+            ['Reading', 'Percent', {role: 'annotation'}],
+            ['AA', 32.6, '32.6%'],
+            ['EL', .365, '36.5%'],
+            ['All Students', .431, '43.1%'],
+        ]);
+        var options_summary = {
+            bar: {groupWidth: "95%"},
+            legend: {position: "none"},
+            isStacked: "percent",
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+        }
+        var chart = new google.charts.Bar(document.getElementById('chart_summary'));
+        chart.draw(data_summary, google.charts.Bar.convertOptions(options_summary));*/
+
+        /* -----------------------------
+        Student Proficiency (Summary) - SMALL
+        ----------------------------*/
+    }
+
+</script>
+<script type="text/javascript">
+
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawDualY);
+
+    function drawDualY() {
+
+
+        var data_div = google.visualization.arrayToDataTable([
+            ['Subject', 'All Students', 'African American', 'English Learner'],
+            ['Reading', 43.1, 32.6, 36.5],
+            ['Math', 48.7, 34.9, 47.7]
+        ]);
+
+        var options_div = {
+            chart: {
+                title: 'Proficiency',
+                subtitle: 'Students who meet/master tests by percentage',
+            },
+            series: {
+                0: {axis: 'MotivationLevel'},
+            },
+            axes: {
+                y: {
+                    MotivationLevel: {label: 'Percent'},
+                }
+            },
+
+            vAxis: {
+                minValue: 10,
+                maxValue: 60,
+                ticks: [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+            }
+
+        };
+
+        var materialChart_div = new google.charts.Bar(document.getElementById('chart_div'));
+        materialChart_div.draw(data_div, options_div);
+
+    }
+</script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':["corechart", 'bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data_div_sm = google.visualization.arrayToDataTable([
+            ['Subject', 'All Students', 'African American', 'English Learner'],
+            ['Math Example', 48.7, 34.9, 47.7]
+        ]);
+
+        var options_div_sm = {
+            legend: {position: "none"},
+
+
+            axes: {
+                y: {
+                    label: 'Sample Percent'
+                    // EnergyLevel: {label: 'Energy Level (1-100)'}
+                }
+            },
+
+
+        };
+
+        var materialChart_div_sm = new google.charts.Bar(document.getElementById('chart_div_sm'));
+        materialChart_div_sm.draw(data_div_sm, options_div_sm);
+    }
+
+</script>
+<script>
+    google.charts.load("current", {packages: ["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+
+
+    function drawChart() {
+        /*
+               google.charts.load('current', {'packages': ['bar']});
+               google.charts.setOnLoadCallback(drawChart);
+
+               /!*       function drawChart() {
+
+
+                        var options_prof = {
+                            chart: {
+                                title: 'Proficiency',
+                                subtitle: 'Students who meet or master tests by percentage',
+                            },
+                            isStacked: 'percent',
+                        };
+
+                        var chart_prof = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+                        chart_prof.draw(data_prof, google.charts.Bar.convertOptions(options_prof));
+                }*!/
+
+               /!* -----------------------------
+       Pillar 1 (Summary) - SMALL
+       ----------------------------*!/
+
+
+               var data_summary_sm = google.visualization.arrayToDataTable([
+                   ['Pop.', '%', {role: 'style'}, {role: 'annotation'}],
+                   ['AA', 20, '#1565C0', '20%'],
+                   ['EL', 10, '#f44336', '10%'],
+                   ['Other', 70, '#FF8F00', '70%'],
+               ]);
+               var options_summary_sm = {
+                   bar: {groupWidth: "95%"},
+                   legend: {position: "none"},
+                   'height': 150,
+                   animation: {
+                       "startup": true,
+                       duration: 1000,
+                       easing: 'out',
+                   },
+               };
+               var chart_summary_sm = new google.visualization.ColumnChart(document.getElementById('chart_summary_sm'));
+               chart_summary_sm.draw(data_summary_sm, options_summary_sm);
+       */
+        /*
+    3-12	OSS	NOT OSS	ALL
+    TOTAL	5143	101276	106419
+    AA	    2446	19683	22129
+    ELP	    1518	45641	47159
+    BOTH	19	    503	    522
+    */
+
+        /* -----------------------------
+     Pillar 1 (Feeder Pattern)
+    ----------------------------*/
+        var data_suspension = google.visualization.arrayToDataTable([
+            ['Grades 3-12', 'Suspended Once or More', 'Never Suspended', {role: 'annotation'}],
+            ['African American', 2446, 19683, ''], //
+            ['English Learners', 1518, 45641, ''], //
+            ['Both AA & EL', 19, 503, ''], //
+            ['Not AA or EL', 1198, 36455, ''], // 37653
+            ['District-wide 3-12', 5143, 101276, ''], //
+
+        ]);
+        var options_suspension = {
+            height: 400,
+            legend: {position: 'top', maxLines: 3},
+            isStacked: 'percent',
+            bar: {groupWidth: '40%'},
+            hAxis: {
+                minValue: 0,
+                ticks: [0, .05, .1, .15],
+                maxValue: .25,
+                viewWindow: {min: 0, max: .15}
+            },
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+        };
+        var chart_suspension = new google.visualization.BarChart(document.getElementById("chart_suspension"));
+        chart_suspension.draw(data_suspension, options_suspension);
+    }
+</script>
+<script>
+        /* -----------------------------
+     Pillar 1 (Feeder Pattern)
+    ----------------------------*/
+
+        google.charts.load('current', {'packages':['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+
+
+            var data_feeder_pattern = google.visualization.arrayToDataTable([
+                ['Feeder Pattern', 'AA', 'EL', 'Both', 'Other', {role: 'annotation'}],
+                ['Adams', 60, 20, 20, 88, ''], //
+                ['Adamson', 30, 40, 30, 88, ''], //
+                ['Carter', 30, 40, 30, 88, ''], //
+                ['Conrad', 30, 40, 30, 88, ''], //
+                ['Hillcrest', 50, 25, 25, 88, ''], //
+                ['Hosp/Home', 20, 45, 35, 88, ''], //
+                ['Jefferson', 40, 30, 30, 88, ''], //
+                ['Juvenile', 20, 45, 35, 88, ''], //
+                ['Kimball', 40, 25, 35, 88, ''], //
+                ['Lincoln', 60, 20, 20, 88, ''], //
+                ['Molina', 20, 40, 40, 88, ''], //
+                ['N Dallas', 20, 45, 35, 88, ''], //
+                ['Pinkston', 30, 45, 25, 88, ''], //
+                ['Roosevelt', 20, 45, 35, 88, ''], //
+                ['Samuell', 20, 45, 35, 88, ''], //
+                ['Skyline', 20, 45, 35, 88, ''], //
+                ['S Oak Cliff', 20, 45, 35, 88, ''], //
+                ['Spruce', 20, 45, 35, 88, ''], //
+                ['Sunset', 20, 45, 35, 88, ''], //
+                ['Transform', 20, 45, 35, 88, ''], //
+                ['WT White', 20, 45, 35, 88, ''], //
+                ['Wilson', 20, 45, 35, 88, ''], //
+                ['No Feeder', 20, 45, 35, 88, ''], // 2052
+            ]);
+            var options_feeder_pattern = {
+                height: 400,
+                legend: {position: 'top', maxLines: 3},
+                isStacked: true,
+                bar: {groupWidth: '45%'},
+                animation: {
+                    "startup": true,
+                    duration: 1000,
+                    easing: 'out',
+                },
+            };
+            var chart_feeder_pattern = new google.visualization.BarChart(document.getElementById("chart_feeder_pattern"));
+            chart_feeder_pattern.draw(data_feeder_pattern, options_feeder_pattern);
+
+        }
+
+</script>
+<script>
+    google.charts.load('current', {'packages':['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+
+        /* -----------------------------
+    Pillar 1 (Feeder Pattern) - SMALL
+    ----------------------------*/
+        var data_feeder_pattern_sm = google.visualization.arrayToDataTable([
+            ['Feeder Pattern', 'AA', 'EL', 'Other', {role: 'annotation'}],
+            ['One', 60, 20, 20, ''],
+            ['Two', 30, 40, 30, ''],
+            ['Three', 20, 40, 40, ''],
+            ['Four', 50, 25, 25, ''],
+
+        ]);
+        var options_feeder_pattern_sm = {
+            height: 400,
+            legend: {position: 'top', maxLines: 3},
+            isStacked: 'percent',
+            bar: {groupWidth: '45%'},
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+        };
+        var chart_feeder_pattern_sm = new google.visualization.BarChart(document.getElementById("chart_feeder_pattern_sm"));
+        chart_feeder_pattern_sm.draw(data_feeder_pattern_sm, options_feeder_pattern_sm);}
+</script>
+
+<script>
+        google.charts.load('current', {'packages':['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+
+
+
+
+        /* -----------------------------
+    Pillar 1 (Gender)
+    ------------------------------*/
+        var data_gender = google.visualization.arrayToDataTable([
+            ['Gender', '%', {role: 'style'}],
+            ['Male', 2500, '#00897B'],
+            ['Female', 5400, '#5E35B1'],
+        ]);
+        var options_gender = {
+            slices: {
+                0: {color: "#9C27B0"},
+                1: {color: "#03A9F4"}
+            },
+            legend: {position: 'left', textStyle: {fontSize: 16}},
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+
+        };
+
+        var chart_gender = new google.visualization.PieChart(document.getElementById('chart_gender'));
+        chart_gender.draw(data_gender, options_gender);
+        }
+
+
+</script>
+<script>
+
+    google.charts.load('current', {'packages':['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+
+
+        /* -----------------------------
+    Pillar 1 (Ethnicity)
+    ------------------------------*/
+        var data_ethnicity = google.visualization.arrayToDataTable([
+            ['Ethnicity', '# of students'],
+            ['Ethnicity 1', 4500],
+            ['Ethnicity 2', 2400],
+            ['Ethnicity 3', 1200],
+            ['Ethnicity 4', 1000],
+        ]);
+        var options_ethnicity = {
+            slices: {
+                0: {color: '#FFC107'},
+                1: {color: '#8BC34A'},
+                2: {color: '#FF5722'},
+                3: {color: '#00BCD4'}
+            },
+            legend: {position: 'left', textStyle: {fontSize: 16}},
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+        };
+        var chart_ethnicity = new google.visualization.PieChart(document.getElementById('chart_ethnicity'));
+        chart_ethnicity.draw(data_ethnicity, options_ethnicity);
+        /* -----------------------------
+    // Pillar 1 (Subject)
+    // ----------------------------*/
+        var data_subject = google.visualization.arrayToDataTable([
+            ['Subject', 'AA', 'EL', 'Other', {role: 'annotation'}],
+            ['Subject 1', 60, 20, 20, ''],
+            ['Subject 2', 30, 40, 30, ''],
+            ['Subject 3', 20, 40, 40, ''],
+        ]);
+        var options_subject = {
+            height: 400,
+            legend: {position: 'top', maxLines: 3},
+            isStacked: 'percent',
+            bar: {groupWidth: '45%'},
+            isStacked: true,
+        };
+        var chart_subject = new google.visualization.BarChart(document.getElementById("chart_subject"));
+        chart_subject.draw(data_subject, options_subject);
+    }
+</script>
+<script>
+
+    google.charts.load('current', {'packages':['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+
+        /*
+    POP
+    AA	    3972	28403	32375
+    EL	    5486	63992	69478
+    BOTH	58	    809	    867
+    NEITHER	12108	40714	52822
+    TOTAL	21508	132300	153808
+    */
+
+        /* -----------------------------
+            Pillar 1 (Feeder Pattern)
+           ----------------------------*/
+        var data_magnet = google.visualization.arrayToDataTable([
+            ['Grades 3-12', 'Suspended Once or More', 'Never Suspended', {role: 'annotation'}],
+            ['African American', 3972, 28403, ' '], //
+            ['English Learners', 5486, 63992, ''], //
+            ['Both AA & EL', 58, 809, ''], //
+            ['Not AA or EL', 12108, 40714, ''], // 37653
+            ['District-wide PK-12', 21508, 132300, ''], //
+
+        ]);
+
+        var view_magnet = new google.visualization.DataView(data_magnet);
+        view_magnet.setColumns([0, 1,
+            {
+                calc: "stringify",
+                sourceColumn: 1,
+                type: "string",
+                role: "annotation"
+            },
+            2]);
+
+
+        var options_magnet = {
+            height: 400,
+            legend: {position: 'top', maxLines: 3},
+            isStacked: 'percent',
+            bar: {groupWidth: '40%'},
+            hAxis: {
+                minValue: 0,
+                ticks: [0, .05, .1, .15, .2, .25, .3],
+                maxValue: .25,
+                viewWindow: {min: 0, max: .30}
+            },
+            animation: {
+                "startup": true,
+                duration: 1000,
+                easing: 'out',
+            },
+
+        };
+        var chart_magnet = new google.visualization.BarChart(document.getElementById("chart_magnet"));
+        chart_magnet.draw(view_magnet, options_magnet);
+    }
+</script>
+<script>
+
+
+        // AP by Language and Ethnicity Chart
+
+        google.charts.load("current", {packages: ["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+
+            var data = google.visualization.arrayToDataTable([
+                ['Ethnicity', 'AP', 'N/A', {role: 'annotation'}],
+                ['African American', 6754, 8147, ""],
+                ['English Learners', 13732, 15735, ""],
+                ['District-wide', 38290, 34085, ""]
+            ]);
+
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation"
+                },
+                2]);
+
+
+            /*   var options = {
+                   width: 600,
+                   height: 400,
+                   legend: { position: 'top', maxLines: 3 },
+                   bar: { groupWidth: '75%' },
+                   isStacked: true
+               };*/
+
+            var options_fullStacked = {
+                isStacked: 'percent',
+                height: 300,
+                legend: {position: 'top', maxLines: 3},
+                hAxis: {
+                    minValue: 0,
+                    ticks: [0, .3, .6, .9, 1]
+                },
+                animation: {
+                    "startup": true,
+                    duration: 1000,
+                    easing: 'out',
+                },
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+            chart.draw(view, options_fullStacked);
+
+    }
+</script>
+
+<!--TEACHER PROFICIENCY-->
+<script type="text/javascript">
+
+
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Students', 'Percent', {role: 'style'}, {role: 'annotation'}],
+            ['African American', .378, '#3366cc', '37.8%' ],
+            ['English Learner', .504, '#dc3912', '50.4%' ],
+            ['All Students', .480, '#109618', '48.0%' ],
+
+        ]);
+
+        var view = new google.visualization.DataView(data);
+
+              var options = {
+            title: "Teacher Proficiency",
+            subtitle: 'Percentage of Proficient Teacher Assignments',
+            legend: { position: "none" },
+            vAxis: {
+                title: 'Percent',
+                format: 'Percent',
+
+            },
+            annotations: {
+                highContrast: true,
+            }}
+        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_material_teach"));
+        chart.draw(view, options);
+    }
+
+            //
+            //
+            // colors:['#f4b400', '#4285f4', '#ff0000'],
+
+</script>
+
+<script>
+    // This script is to slow page movement to appear to float, instead of automatically anchor
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<script>
+    $('body').scrollspy({target: '#navbar-example'})
+</script>
+</body>
+</html>

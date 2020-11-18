@@ -315,11 +315,11 @@
                     <div class="row mb-4">
                         <div class="col-lg-4">
                             <p class="mb-5">
-                                <span class="display-4">45%</span></br>
+                                <span class="display-4">44%</span></br>
                                 of African American students in grades
                                 6&ndash;12 are <strong>enrolled in advanced courses.</strong></p>
 
-                            <p class="mb-5"><span class="display-4">47%</span></br>
+                            <p class="mb-5"><span class="display-4">49%</span></br>
                                 of English Language Learning students in grades
                                 6&ndash;12 are <strong>enrolled in advanced courses.</strong></p>
 
@@ -343,7 +343,7 @@
 
 
                     </div>
-                    <p class="card-text "><em>An average of 53% of DISD students are enrolled in AP courses.</em></p>
+                    <p class="card-text "><em>An average of 52% of DISD students are enrolled in AP courses.</em></p>
                 </div>
                 <div class="col-lg-4">
                     <div class="card text-white bg-info">
@@ -377,10 +377,10 @@
             <div class="row">
                 <div class="col-lg-6">
 
-                    <h6>Qualified Students Enrolled In Magnets</h6>
+                    <h6>Qualified students enrolled in Choice Programs</h6>
                     <div id="chart_magnet"></div>
                     <p class="card-text small" id="magnet">
-                        % of qualified students enrolled in magnets
+                        % of qualified students enrolled in Choice Programs
                         <br/>
                         One bar each for % of African American, English Learner, and Districtwide students
                     </p>
@@ -911,6 +911,12 @@
 
         ]);
         var options_suspension = {
+            annotations: {
+                textStyle: {
+                    fontSize: 10,
+
+                }
+            },
             height: 400,
             legend: {position: 'top', maxLines: 3},
             isStacked: 'percent',
@@ -959,6 +965,10 @@
 
         ]);
         var options_feeder_pattern = {
+
+                    fontSize: 10,
+
+
             // height: 400,
             /*
             legend: {position: 'top', maxLines: 3},
@@ -988,6 +998,7 @@
             ['Seagoville', 25.82,''] //
         ]);
         var options_feeder_pattern_ks = {
+            fontSize: 10,
             // height: 400,
             /*
             legend: {position: 'top', maxLines: 3},
@@ -1021,6 +1032,7 @@
             ['W.T. White', 47.53,''], //
         ]);
         var options_feeder_pattern_nz = {
+            fontSize: 10,
             // height: 400,
             /*
             legend: {position: 'top', maxLines: 3},
@@ -1029,6 +1041,14 @@
 
             //isStacked: true,
             // bar: {groupWidth: '45%'},
+
+            annotations: {
+                textStyle: {
+                    fontSize: 10,
+
+                }
+            },
+
             animation: {
                 "startup": true,
                 duration: 1000,
@@ -1050,6 +1070,7 @@
             ['Exemplary',17,''], //
         ]);
         var options_leadership_operations = {
+            fontSize: 10,
             // height: 400,
             /*
             legend: {position: 'top', maxLines: 3},
@@ -1174,11 +1195,13 @@ Let's Talk Reviews	609	290	899	67.74%	32.26%
         var data_ethnicity = google.visualization.arrayToDataTable([
             ['Request Type', 'Number of Requests'],
             ['Question', 6075],
-            ['Comment', 160],
-            ['Suggestion', 80],
+            ['Comment, Compliment, Suggestion', 400],
+
+          //  ['Comment', 160],
+          //  ['Suggestion', 80],
             ['Concern', 1519],
-            ['Compliment', 80],
-            ['Other', 80]
+          //  ['Compliment', 80],
+          //  ['Other', 80]
         ]);
         var options_ethnicity = {
             slices: {
@@ -1254,9 +1277,9 @@ Districtwide	26862	50982	77844	34.51%	65.49%
 
         var data_magnet = google.visualization.arrayToDataTable([
             ['Grades 6-12', 'Enrolled in a Choice Program', 'Not Enrolled in Choice Program', {role: 'annotation'}],
-            ['African American', 4594, 16115, ' '], //
-            ['English Learner', 10099, 33651, ''], //
-            ['Districtwide', 26862, 77844, ''], //
+            ['African American', 4594, 11521, ' '], //
+            ['English Learner', 10099, 23552, ''], //
+            ['Districtwide', 26862, 50982, ''], //
 
         ]);
 
@@ -1278,9 +1301,9 @@ Districtwide	26862	50982	77844	34.51%	65.49%
             bar: {groupWidth: '40%'},
             hAxis: {
                 minValue: 0,
-                ticks: [ .15, .2, .25, .3, .35,],
+                ticks: [ .2, .25, .3, .35,.40,.45],
                 maxValue: .25,
-                viewWindow: {min: .15, max: .35}
+                viewWindow: {min: .2, max: .45}
             },
             animation: {
                 "startup": true,
@@ -1375,13 +1398,19 @@ Districtwide	76.00%
 High Priority Campuses	70.70%
 Accelerating Campus Excellence	64.10%
 */
+/*
+Districtwide
+High Priority Campuses
+Accelerating Campus Excellence
+ */
+
 
 
         var data = google.visualization.arrayToDataTable([
             ['Students', 'Percent', {role: 'style'}, {role: 'annotation'}],
-            ['African American', .760, '#3366cc', '76.00%'],
-            ['English Learner', .707, '#dc3912', '70.70%'],
-            ['All Students', .641, '#109618', '64.10%'],
+            ['Districtwide', .760, '#3366cc', '76.00%'],
+            ['High Priority Campuses', .707, '#dc3912', '70.70%'],
+            ['Accelerating Campus Excellence', .641, '#109618', '64.10%'],
 
         ]);
 

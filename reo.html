@@ -461,16 +461,16 @@ November	9396	9418	99.77%
                 <div class="col-sm-6">
                     <p class="mb-5">
                     <span class="display-4">99.85%</span></br>
-                        Percent of teachers who completed <strong>cultural intelligence and unconscious bias
-                            training</strong> in October
+                        Percent of teachers who completed <strong>cultural intelligence
+                            training</strong> in October 2020
 
 
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p class="mb-5"><span class="display-4">9,396</span></br>
-                        Total teachers who completed <strong>cultural intelligence and unconscious bias
-                            training</strong> in November
+                        Total teachers who completed <strong>cultural intelligence
+                            training</strong> in November 2020
                     </p>
                 </div>
             </div>
@@ -480,6 +480,8 @@ November	9396	9418	99.77%
                 <div class="col-lg-12">
 
                     <div id="donutchart" style=" height: 500px;"></div>
+
+
                 </div>
             </div>
 
@@ -527,7 +529,8 @@ November	9396	9418	99.77%
 
 
             <div id="chart_leadership_operations"></div>
-
+            <div id="donutchart_trust" style=" height: 500px;"></div>
+            <div id="donutchart_culture" style=" height: 500px;"></div>
 
            <a href="#home" class="btn btn-primary">Back to Top</a>
 
@@ -935,6 +938,8 @@ November	9396	9418	99.77%
             ['Conrad', 25.77, ''], //
             ['Hillcrest', 49.84, ''], //
             ['Jefferson', 37.41, ''], //
+            ['Kimball', 46.77, ''], //
+
 
 
         ]);
@@ -963,7 +968,6 @@ November	9396	9418	99.77%
 
         var data_feeder_pattern_ks = google.visualization.arrayToDataTable([
             ['Feeder Pattern', 'Feeder Pattern', {role: 'annotation'}],
-            ['Kimball', 46.77, ''], //
             ['Lincoln', 42.95, ''], //
             ['North Dallas', 51.52, ''], //
 
@@ -973,6 +977,9 @@ Molina	34.19%
              */
             ['Madison', 33.26, ''], //
             ['Molina', 34.19, ''], //
+            ['North Dallas', 51.52, ''], //
+
+
             ['Pinkston', 48.21, ''], //
             ['Roosevelt', 44.21, ''], //
             ['Samuell', 42.23, ''], //
@@ -1438,11 +1445,11 @@ Total	10259	100.0
             // https://www.apstylebook.com/race-related-coverage
 
             ['Race', 'Teachers'],
-            ['Black', 3542],
-            ['Latino', 3322],
-            ['White', 2800],
+            ['Black or African American', 3542],
+            ['Latino or Hispanic', 3322],
+            ['White or Caucasian', 2800],
             ['Asian', 323],
-            ['Other', 272]
+            ['Two or More Races, American Indian or Alaska Native, Native Hawaiian or Other Pacific Islander ', 272]
         ]);
 
         var options = {
@@ -1452,7 +1459,72 @@ Total	10259	100.0
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
+
+
+    /*
+    Campus Teacher-Principal Trust
+Percent Positive	Number of Schools	Percent of Schools
+79.5-100%	99	44.00%
+59.5-79.49%	90	40.00%
+39.5-59.49%	28	12.44%
+19.5-39.49%	8	3.56%
+0-19.49%	0	0.00%
+	225
+     */
+
+
+        var data_trust = google.visualization.arrayToDataTable([
+
+            // https://www.apstylebook.com/race-related-coverage
+
+            ['Percent Positive', 'Schools Number'],
+            ['80-100%', 99],
+            ['60-79%', 90],
+            ['40-59%', 28],
+            ['20-39%', 8],
+        ]);
+
+        var options_trust = {
+            title: 'Campus Teacher-Principal Trust',
+            pieHole: 0.3,
+        };
+
+        var chart_trust = new google.visualization.PieChart(document.getElementById('donutchart_trust'));
+        chart_trust.draw(data_trust, options_trust);
+
+
+    /*
+    Campus Positive Culture and Environment
+Percent Positive	Number of Schools	Percent of Schools
+79.5-100%	74	32.89%
+59.5-79.49%	96	42.67%
+39.5-59.49%	47	20.89%
+19.5-39.49%	8	3.56%
+0-19.49%	0	0.00%
+	225
+     */
+
+
+        var data_culture = google.visualization.arrayToDataTable([
+
+            // https://www.apstylebook.com/race-related-coverage
+
+            ['Percent Positive', 'Schools Number'],
+            ['80-100%', 74],
+            ['60-79%', 96],
+            ['40-59%', 47],
+            ['20-39%', 8],
+        ]);
+
+        var options_culture = {
+            title: 'Campus Positive Culture and Environment',
+            pieHole: 0.3,
+        };
+
+        var chart_culture = new google.visualization.PieChart(document.getElementById('donutchart_culture'));
+        chart_culture.draw(data_culture, options_culture);
     }
+
 </script>
 <script>
     // This script is to slow page movement to appear to float, instead of automatically anchor
